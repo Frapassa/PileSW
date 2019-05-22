@@ -1,0 +1,54 @@
+
+[
+	 // PARAMETRI
+	{"Parametri":[
+				{"name":"Versione","Value":"01.01.004"},
+				{"name":"LogOn","Value":"N"},
+				{"name":"Share","Value":"\\10.182.100.124\PileSW"}
+	]},
+
+	// Convenzione Nomi
+	{"ConvNomi":[
+				{"name":"T&T","RegEx":"^(T|U)\w{2}\d{4}C\d{3}"},
+				{"name":"ELearning","RegEx":"^(T|U)\w{2}\d{4}CL\d{2}"},
+				{"name":"BackOffice","RegEx":"^(T|U)\w{2}\d{4}CB\d{2}"},
+				{"name":"Portabile","RegEx":"^\w{2}\w{2}\d{4}M\d{3}"},
+				{"name":"Faldoni","RegEx":"^(T|U)\w{2}\d{4}CFT\d{1}"}
+	
+	]},
+		
+	// TIPO C -> CERTIFICATI
+	{"Tipo":"C","StoreName":"root","PropQuale":"IssuerName","PropValore":"CN=CAROOT, DC=CORP, DC=POSTE"} ,
+	{"Tipo":"C","StoreName":"root","PropQuale":"IssuerName","PropValore":"CN=Microsoft Root Certificate Authority 2011, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"},
+	{"Tipo":"C","StoreName":"CA","PropQuale":"IssuerName","PropValore":"CN=Postecom CA1 Interna, OU=Servizi di Certificazione, O=Postecom S.p.A., C=IT"	},
+	
+	// TIPO F -> FILE E DIR
+	{"Tipo":"F","Path":"C:\S.log","IsFile":"true"},
+	{"Tipo":"F","Path":"C:\TEMP_CA","IsFile":"false"},
+	{"Tipo":"F","Path":"C:\Windows\SoftwareDistribution\Download","IsFile":"false"},
+	{"Tipo":"F","Path":"C:\Temp","IsFile":"false"},
+	{"Tipo":"F","Path":"C:\Deploy","IsFile":"false"},
+	{"Tipo":"F","Path":"D:\Deploy","IsFile":"false"},
+
+	// TIPO R -> REGISTRO
+	{"Tipo":"R","Nome": "","Key":"HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceInstall\Settings","Value":"AllowRemoteRPC"},
+	{"Tipo":"R","Nome": "","Key":"HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\PhishingFilter","Value":"EnabledV8"},
+	{"Tipo":"R","Nome": "","Key":"HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Internet Explorer\PhishingFilter","Value":"EnabledV8"}	,
+	{"Tipo":"R","Nome": "","Key":"HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceInstall\Settings","Value":"AllowRemoteRPC"},
+	{"Tipo":"R","Nome": "","Key":"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update","Value":"AUOptions"},
+	{"Tipo":"R","Nome": "","Key":"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System","Value":"HideFastUserSwitching"},
+	{"Tipo":"R","Nome": "","Key":"%JAVA6%\MSI","Value":"FullVersion"},
+	{"Tipo":"R","Nome": "","Key":"%JAVA6%\MSI","Value":"JAVAUPDATE"},
+	{"Tipo":"R","Nome": "","Key":"%JAVA6%\MSI","Value":"AUTOUPDATECHECK"},	
+
+	// TIPO S -> SERVIZI
+	{"Tipo":"S","Nome":"RemoteRegistry"},
+	{"Tipo":"S","Nome":"SNMP"},
+	{"Tipo":"S","Nome":"WMISnmpProvider"} ,
+	
+	// TIPO W -> WMI_Query
+	//{"Tipo":"W","Nome":"Nome","Query":"SELECT NAME FROM Win32_ComputerSystem"},
+	//{"Tipo":"W","Nome":"Produttore","Query":"SELECT MANUFACTURER FROM Win32_ComputerSystem"},
+	//{"Tipo":"W","Nome":"Modello","Query":"SELECT MODEL FROM Win32_ComputerSystem"}
+
+]

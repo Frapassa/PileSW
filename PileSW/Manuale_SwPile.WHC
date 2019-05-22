@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuracion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFiles>
+    <string>.\Manuale_SwPile_v0.1.1.docx</string>
+  </SourceFiles>
+  <Compilar>true</Compilar>
+  <DirectorioDestino>.\Manuale_SwPile_v0.1.1-project</DirectorioDestino>
+  <HtmlCabecera />
+  <HtmlPie />
+  <TituloAyuda>SW Pile</TituloAyuda>
+  <NivelCorte>2</NivelCorte>
+  <GenerarWeb>false</GenerarWeb>
+  <ArchivosAdicionales />
+  <AbrirProyecto>false</AbrirProyecto>
+  <DirectorioWeb>.\Manuale_SwPile_v0.1.1-web</DirectorioWeb>
+  <NivelArbolContenidos>0</NivelArbolContenidos>
+  <NivelTemasIndice>2</NivelTemasIndice>
+  <ArchivoAyuda>.\Manuale_SwPile.chm</ArchivoAyuda>
+  <CommandLine />
+  <GeneratePdf>false</GeneratePdf>
+  <PdfPath>.\Manuale_SwPile_v0.1.1.pdf</PdfPath>
+  <WebKeywords />
+  <WebDescription />
+  <WebHeaderFile />
+  <WebFooterFile />
+  <GenerateSitemap>false</GenerateSitemap>
+  <WebBase />
+  <ChangeFrequency>monthly</ChangeFrequency>
+  <WebLanguage>English</WebLanguage>
+  <ConfigurationVersion>1.7</ConfigurationVersion>
+  <FullTextSearch>false</FullTextSearch>
+  <PdfGeneration>OfficeAddin</PdfGeneration>
+  <GenerateXps>false</GenerateXps>
+  <XpsPath>.\Manuale_SwPile_v0.1.1.xps</XpsPath>
+  <GenerateJavaHelp>false</GenerateJavaHelp>
+  <JavaHelpPath>.\Manuale_SwPile_v0.1.1.jar</JavaHelpPath>
+  <HeadTagFile />
+  <ChmLocaleID>1040</ChmLocaleID>
+  <WebTemplateName>jQuery</WebTemplateName>
+  <CustomTemplateDirectory />
+</Configuracion>
